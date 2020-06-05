@@ -1,47 +1,60 @@
 .case-header
-  height: 100vh
-  width: 100vw
+  position: relative
+
   display: flex
   align-items: center
-  justify-content: center
-  position: relative
   flex-direction: column
+  justify-content: center
+
+  width: 100vw
+  height: calc(100vh - 60px)
+  padding-bottom: 9rem
 
   p
+    margin: 0
+
     text-align: center
+    text-align: center
+
+    color: #FFFFFF
+
     font-family: HelveticaNeue
     font-size: 16px
-    color: #FFFFFF
-    text-align: center
-    margin: 0
 
   h1
     max-width: 113.2rem
-    text-align: center
     margin: 0 auto
     margin-top: 4.5rem
 
+    text-align: center
+
+    .cursive
+      display: block
+
 .case-header__eye
   position: absolute
-  left: 0
   right: 0
-  margin: 0 auto
   bottom: 4.7rem
+  left: 0
+
+  margin: 0 auto
 
 .case-intro
-  background: #F3F0EC
-  padding: 200px 40px
   margin-bottom: 20rem
+  padding: 200px 40px
+
+  background: #F3F0EC
 
   .case-element
     display: flex
+
     margin: 0 auto
 
     p
       color: #0d0d0d
 
-      &:last-child
-        margin-bottom: 0
+      // &:last-child
+      //   margin-bottom: 0
 
 .case-intro__meta
   margin-right: 27.7rem
@@ -49,26 +62,33 @@
 .case-intro__meta-group
 
   h4
-    opacity: 0.6
-    font-family: HelveticaNeue-Light
-    font-size: 18px
-    color: #0D0D0D
     margin: 0
     margin-bottom: 1.4rem
 
-  p
-    font-family: HelveticaNeue-Light
-    font-size: 16px
+    opacity: 0.6
     color: #0D0D0D
+
+    font-family: HelveticaNeue-Light
+    font-size: 18px
+
+  p
     margin: 0
 
-  a
+    color: #0D0D0D
+
     font-family: HelveticaNeue-Light
     font-size: 16px
-    color: #0D0D0D
-    margin: 0
+
+  a
     display: block
+
+    margin: 0
+
+    color: #0D0D0D
     border-bottom: 1px solid rgba(#0d0d0d, .2)
+
+    font-family: HelveticaNeue-Light
+    font-size: 16px
 
 .case-intro__meta-group
   margin-bottom: 4.5rem
@@ -80,23 +100,27 @@
   margin-top: -8px
 
   h5
+    margin-top: 0
+    margin-bottom: 2.3rem
+
+    color: #0D0D0D
+
     font-family: HelveticaNeue
     font-size: 26px
-    color: #0D0D0D
     line-height: 36px
-    margin-bottom: 2.3rem
-    margin-top: 0
 
   p
+    margin-top: 0
+    margin-bottom: 2.3rem
+
+    color: #0D0D0D
+
     font-family: HelveticaNeue-Light
     font-size: 18px
-    color: #0D0D0D
     line-height: 31px
-    margin-bottom: 2.3rem
-    margin-top: 0
 
     &:last-child
-      margin-bottom:
+      margin-bottom: 0
 
 .case-element
   max-width: 1158px
@@ -110,34 +134,41 @@
       margin-bottom: 0
 
   small
-    font-family: SchnyderL-Light
-    font-size: 16px
-    color: #F9F9F9
     margin: 0
 
-  h2
-    font-family: SchnyderL-Light
-    font-size: 72px
     color: #F9F9F9
-    line-height: 70px
+
+    font-family: SchnyderL-Light
+    font-size: 16px
+
+  h2
     display: block
+
     margin: 0
     margin-top: 2rem
     margin-bottom: 2rem
 
+    color: #F9F9F9
+
+    font-family: SchnyderL-Light
+    font-size: 72px
+    line-height: 70px
+
   .divider
-    height: 1px
-    background: rgba(#979797, .3)
     width: 100%
+    height: 1px
     margin-bottom: 2rem
+
+    background: rgba(#979797, .3)
 
   .casestudy__cta
     margin-top: 3.6rem
 
   p
+    color: #F9F9F9
+
     font-family: HelveticaNeue-Light
     font-size: 18px
-    color: #F9F9F9
     line-height: 28px
 
 .case-element__text
@@ -152,3 +183,56 @@
 
   &:first-child
     margin-right: 4rem
+
+.case-element-fullish
+  max-width: 130.9rem
+  margin: 0 auto
+
+.case-element__grid
+  display: flex
+  align-items: stretch
+
+  margin-bottom: 200px
+
+.case-element__row
+
+  h3
+    width: 100%
+    margin-bottom: 0
+    padding: 1.3rem 3.9rem
+
+    text-transform: uppercase
+
+    color: #F9F9F9
+    border: 1px solid rgba(#979797, .3)
+
+    font-family: SchnyderL-Light
+    font-size: 21.91px
+
+  div
+    width: 100%
+    padding: 3.9rem
+
+    border: 1px solid rgba(#979797, .3)
+
+body
+  margin-bottom: 100vh
+
+.case-element--full
+  margin-bottom: 20px
+  margin-bottom: 200px
+
+.case-element--full__img + p
+  margin: 0 auto
+  margin-top: 6.6rem
+
+.case-element--full p
+  max-width: 579px
+
+  text-align: center
+
+  color: #F9F9F9
+
+  font-family: HelveticaNeue-Light
+  font-size: 14px
+  line-height: 28px
