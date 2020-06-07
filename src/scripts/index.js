@@ -2,6 +2,7 @@ import './pace.min.js';
 import gsap from 'gsap';
 import barba from '@barba/core';
 import '../styles/index.sass';
+import LocomotiveScroll from 'locomotive-scroll';
 
 let scroll;
 
@@ -78,6 +79,30 @@ barba.init({
       async enter({ current, next, trigger }) {
         contentAnimation();
         scroll.update();
+
+        if ((next.namespace = 'home')) {
+          smoothScroller();
+        }
+
+        if ((next.namespace = 'about')) {
+          const vids = next.container.querySelectorAll('video');
+          vids.forEach((vid) => vid.play());
+
+          const eye = document.querySelector('.case-header__eye');
+          eye.addEventListener('mouseenter', function (e) {
+            gsap.to('.eye-vis', {
+              autoAlpha: 0,
+              duration: 0.7,
+            });
+          });
+
+          eye.addEventListener('mouseleave', function (e) {
+            gsap.to('.eye-vis', {
+              autoAlpha: 1,
+              duration: 0.7,
+            });
+          });
+        }
       },
 
       async once({ current, next, trigger }) {
@@ -96,7 +121,6 @@ function smooth(container) {
   });
 }
 
-import LocomotiveScroll from 'locomotive-scroll';
 // window.addEventListener('DOMContentLoaded', (event) => {
 //   console.log('DOM fully loaded and parsed');
 
@@ -106,41 +130,50 @@ import LocomotiveScroll from 'locomotive-scroll';
 //     // offset: -30000,
 //   });
 
-//   // const l1 = document.querySelector('#l-1');
-//   // const l1T = document.querySelector('#intro');
+function smoothScroller() {
+  const l1 = document.querySelector('#l-1');
+  const l1T = document.querySelector('#intro');
 
-//   // const l2 = document.querySelector('#l-2');
-//   // const l2T = document.querySelector('#casestudies');
+  const l2 = document.querySelector('#l-2');
+  const l2T = document.querySelector('#casestudies');
 
-//   // const l3 = document.querySelector('#l-3');
-//   // const l3T = document.querySelector('#about');
+  const l3 = document.querySelector('#l-3');
+  const l3T = document.querySelector('#about');
 
-//   // const l4 = document.querySelector('#l-4');
-//   // const l4T = document.querySelector('#sketches');
+  const l4 = document.querySelector('#l-4');
+  const l4T = document.querySelector('#sketches');
 
-//   // const l5 = document.querySelector('#l-5');
-//   // const l5T = document.querySelector('#contact');
+  const l5 = document.querySelector('#l-5');
+  const l5T = document.querySelector('#contact');
 
-//   // l1.addEventListener('click', function (e) {
-//   //   scroll.scrollTo(l1T, -100);
-//   // });
+  l1.addEventListener('click', function (e) {
+    btnScrollTo(l1T, e);
+  });
 
-//   // l2.addEventListener('click', function (e) {
-//   //   scroll.scrollTo(l2T, -100);
-//   // });
+  l2.addEventListener('click', function (e) {
+    btnScrollTo(l2T, e);
+  });
 
-//   // l3.addEventListener('click', function (e) {
-//   //   scroll.scrollTo(l3T, -100);
-//   // });
+  l3.addEventListener('click', function (e) {
+    btnScrollTo(l3T, e);
+  });
 
-//   // l4.addEventListener('click', function (e) {
-//   //   scroll.scrollTo(l4T, -100);
-//   // });
+  l4.addEventListener('click', function (e) {
+    btnScrollTo(l4T, e);
+  });
 
-//   // l5.addEventListener('click', function (e) {
-//   //   scroll.scrollTo(l5T, -100);
-//   // });
-// });
+  l5.addEventListener('click', function (e) {
+    btnScrollTo(l5T, e);
+  });
+
+  const navButtons = document.querySelectorAll('.main-header button');
+
+  function btnScrollTo(target, e) {
+    scroll.scrollTo(target, -100);
+    navButtons.forEach((btn) => (btn.style.opacity = 0.5));
+    e.currentTarget.style.opacity = 1;
+  }
+}
 
 window.addEventListener('resize', function () {
   scroll.update();

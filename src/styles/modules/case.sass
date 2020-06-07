@@ -2,12 +2,13 @@
   position: relative
 
   display: flex
+  overflow: hidden
   align-items: center
   flex-direction: column
   justify-content: center
 
   width: 100vw
-  height: calc(100vh - 60px)
+  height: calc(100vh - 90px)
   padding-bottom: 9rem
 
   p
@@ -31,6 +32,22 @@
     .cursive
       display: block
 
+.header__overlay
+  position: absolute
+  z-index: -1
+
+  width: 100%
+  height: calc(100vh + 0px)
+
+  background: rgba(#0d0d0d, 0.95)
+
+#header__video
+  position: absolute
+  z-index: -2
+
+  width: 100vw
+  // height: 100%
+
 .case-header__eye
   position: absolute
   right: 0
@@ -38,6 +55,11 @@
   left: 0
 
   margin: 0 auto
+
+  transition: .3s
+
+  &:hover
+    transform: scale(1.7)
 
 .case-intro
   margin-bottom: 20rem
@@ -59,36 +81,37 @@
 .case-intro__meta
   margin-right: 27.7rem
 
-.case-intro__meta-group
+.case-element
+  .case-intro__meta-group
 
-  h4
-    margin: 0
-    margin-bottom: 1.4rem
+    h4
+      margin: 0
+      margin-bottom: 1.4rem
 
-    opacity: 0.6
-    color: #0D0D0D
+      opacity: 0.6
+      color: #0D0D0D
 
-    font-family: HelveticaNeue-Light
-    font-size: 18px
+      font-family: HelveticaNeue-Light
+      font-size: 18px
 
-  p
-    margin: 0
+    p
+      margin: 0
 
-    color: #0D0D0D
+      color: #0D0D0D
 
-    font-family: HelveticaNeue-Light
-    font-size: 16px
+      font-family: HelveticaNeue-Light
+      font-size: 16px
 
-  a
-    display: block
+    a
+      display: block
 
-    margin: 0
+      margin: 0
 
-    color: #0D0D0D
-    border-bottom: 1px solid rgba(#0d0d0d, .2)
+      color: #0D0D0D
+      border-bottom: 1px solid rgba(#0d0d0d, .2)
 
-    font-family: HelveticaNeue-Light
-    font-size: 16px
+      font-family: HelveticaNeue-Light
+      font-size: 16px
 
 .case-intro__meta-group
   margin-bottom: 4.5rem
@@ -127,10 +150,11 @@
   margin: 0 auto
   margin-bottom: 20rem
 
-  img
-    margin-bottom: 10rem
+  img, video
+    max-width: 100%
+    margin-bottom: 2rem
 
-    &:last-of-type
+    &:last-child
       margin-bottom: 0
 
   small
@@ -233,3 +257,9 @@
   font-family: HelveticaNeue-Light
   font-size: 14px
   line-height: 24px
+
+p a
+  padding-bottom: 1px
+
+  color: inherit
+  border-bottom: 1px solid rgba(#fff, .4)

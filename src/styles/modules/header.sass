@@ -32,9 +32,10 @@ nav
 
   padding: 0rem 5.6rem
 
-  a
+  button
     margin-right: 5.2rem
 
+    transition: .3s
     transition: .3s
     text-align: center
     letter-spacing: 0.4px
@@ -52,10 +53,13 @@ nav
       opacity: 1
 
     &:hover
-      opacity: 1
+      opacity: 1 !important
 
     &:last-child
       margin-right: 0
+
+    &:focus
+      outline: none
 
 .socials
   display: flex
