@@ -23,8 +23,12 @@ class Particle {
     }
     this.x += (1 - this.speed) * 3 + this.v;
 
-    if (this.x > width) {
-      this.x = 0;
+    if (mouseIsPressed) {
+      // this.x = -10;
+    } else {
+      if (this.x > width) {
+        this.x = 0;
+      }
     }
   }
 
