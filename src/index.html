@@ -47,7 +47,7 @@
 
           <div data-scroll data-scroll-speed="2.2" id="self-portait"></div>
 
-          <small data-scroll data-scroll-speed="2.2" class="intro-caption">self-portait, 2020</small>
+          <small data-scroll data-scroll-speed="2.2" class="intro-caption">self-portrait, 2020</small>
         </section>
 
         <section id="casestudies" data-scroll-section>
@@ -67,7 +67,9 @@
 
             <div class="casestudy__images">
               <img data-scroll data-scroll-speed="0.2" class="casestudy__image casestudy__image--1" src="assets/img/codename/featured/1.jpg" alt="" />
-              <img data-scroll data-scroll-speed="2" class="casestudy__image casestudy__image--2" src="assets/img/codename/featured/2.jpg" alt="" />
+              <video data-scroll data-scroll-speed="2" class="casestudy__image casestudy__image--2" autoplay="autoplay" loop muted>
+                <source src="assets/img/codename/case/language.mp4" type="video/mp4" />
+              </video>
               <img
                 data-scroll
                 data-scroll-speed="5"
@@ -92,9 +94,32 @@
             </div>
 
             <div class="casestudy__images">
-              <img data-scroll data-scroll-speed="3" class="casestudy__image casestudy__image--1" src="assets/img/thorikos/featured/1.jpg" alt="" />
+              <video data-scroll data-scroll-speed="3" class="casestudy__image casestudy__image--1" autoplay="autoplay" loop muted>
+                <source src="assets/img/thorikos/featured/1.mp4" type="video/mp4" />
+              </video>
               <img data-scroll data-scroll-speed="0.1" class="casestudy__image casestudy__image--2" src="assets/img/thorikos/featured/2.jpg" alt="" />
               <img data-scroll data-scroll-speed="0.8" class="casestudy__image casestudy__image--3" src="assets/img/thorikos/featured/3.jpg" alt="" />
+            </div>
+          </section>
+
+          <section class="casestudy">
+            <h3 class="casestudy__title" data-scroll data-scroll-speed="1.2">Wealth & Status</h3>
+            <div data-scroll data-scroll-speed="1">
+              <ul class="casestudy__stack">
+                <li class="casestudy__stack__item">Visual Design</li>
+                <li class="casestudy__stack__item">Design research</li>
+              </ul>
+              <div class="casestudy__cta">
+                <a href="red.html"> View project <img src="assets/img/arrow-up.svg" alt="" /> </a>
+              </div>
+            </div>
+
+            <div style="position: relative; top: -100px;" class="casestudy__images">
+              <img data-scroll data-scroll-speed="0.2" class="casestudy__image casestudy__image--1" src="assets/img/red/featured/1.jpg" alt="" />
+              <video style="height: 250px;" data-scroll data-scroll-speed="2" class="casestudy__image casestudy__image--2" autoplay="autoplay" loop muted>
+                <source src="assets/img/red/feature.mov" />
+              </video>
+              <img data-scroll data-scroll-speed="5" style="height: 413px;" class="casestudy__image casestudy__image--3" src="assets/img/red/featured/2.jpg" alt="" />
             </div>
           </section>
         </section>
@@ -174,14 +199,3 @@
     <script src="src/scripts/portait.js"></script>
   </body>
 </html>
-
-<!-- <div data-scroll-container>
-  <div data-scroll-section>
-    <h1 data-scroll>Hey</h1>
-    <p data-scroll>👋</p>
-  </div>
-  <div data-scroll-section>
-    <h2 >What's up?</h2>
-    <p data-scroll data-scroll-speed="2">😬</p>
-  </div>
-</div> -->

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Thorikos</title>
+    <title>thorikos</title>
     <meta charset="utf-8" />
-    <meta name="description" content="A Thorikos project" />
+    <meta name="description" content="A thorikos project" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="author" content="Martijn Keesmaat" />
   </head>
@@ -20,11 +20,11 @@
         <a href="index.html" class="logo"> MA <span class="cursive">KE </span> </a>
       </div>
       <nav>
-        <a href="#intro">intro</a>
-        <a href="#casestudeis">casestudies</a>
-        <a href="#about">about</a>
-        <a href="#sketches">6pm-12am</a>
-        <a href="#contact">contact</a>
+        <button id="l-1">intro</button>
+        <button id="l-2">casestudies</button>
+        <button id="l-3">about</button>
+        <button id="l-4">6pm-12am</button>
+        <button id="l-5">contact</button>
       </nav>
       <div class="socials">
         <a href="">Dr</a>
@@ -35,201 +35,233 @@
     </header>
 
     <main data-barba="container" data-barba-namespace="about">
-      <header class="case-header">
-        <p>Design + Code =</p>
-        <h1>Thorikos <span class="cursive">the series</span></h1>
-        <img src="assets/img/eye.svg" alt="" class="case-header__eye" />
-      </header>
+      <div data-scroll-container>
+        <header class="case-header">
+          <p class="eye-vis">Datavis.</p>
+          <h1 class="eye-vis">Thorikos <span class="cursive">analytics</span></h1>
+          <img src="assets/img/eye.svg" alt="" class="case-header__eye" />
+          <div class="header__overlay eye-vis"></div>
+          <video autoplay="autoplay" loop muted id="header__video">
+            <source src="assets/img/thorikos/featured/1.mp4" type="video/mp4" />
+          </video>
+        </header>
 
-      <section class="case-intro">
-        <div class="case-element">
-          <div class="case-intro__meta">
-            <div class="case-intro__meta-group">
-              <h4>Role</h4>
-              <p>Front-end</p>
-              <p>Design</p>
+        <section class="case-intro">
+          <div class="case-element">
+            <div class="case-intro__meta">
+              <div class="case-intro__meta-group">
+                <h4>Role</h4>
+                <p>Front-end</p>
+                <p>Userexperience design</p>
+              </div>
+
+              <div class="case-intro__meta-group">
+                <h4>Link</h4>
+                <a target="_blank" href="https://thorikos.netlify.app/">Thorikos.com</a>
+              </div>
+
+              <div class="case-intro__meta-group">
+                <h4>Stack</h4>
+                <p>D3</p>
+              </div>
             </div>
-
-            <div class="case-intro__meta-group">
-              <h4>Link</h4>
-              <a href="">Behance.com//</a>
-            </div>
-
-            <div class="case-intro__meta-group">
-              <h4>Stack</h4>
-              <p>GSAP</p>
-              <p>Pixi.js</p>
-              <p>Webgl</p>
-            </div>
-          </div>
-          <div class="case-intro__text">
-            <h5>Thorikos is a series of projects in which UI interactions are explored through visual design and code.</h5>
-            <p>
-              It now consist of 16+ conceptual projects. The first project was uploaded in the end of 2018. Each project has a different concept but needs to involve an
-              unique mechanic, interaction or effect. Some projects were just fun to create and didn’t take that much. Others were very personal and served as a type of
-              therapy. These projects involve copy I personally wrote to understand the world around me better.
-            </p>
-            <p>
-              Something more I want to talk about Something more I want to talk about Something more I want to talk about Something more I want to talk about Something
-              more I want to talk about Something more I want to talk about Something more I want to talk about Something more I want to talk about.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-element">
-        <img src="assets/img/Thorikos/case/feature.jpg" alt="" />
-      </section>
-
-      <article class="case-element">
-        <div class="case-element__text">
-          <small>May 05, 2020</small>
-          <h2>RIPE</h2>
-          <hr class="divider" />
-          <div class="case-element__body">
-            <div class="case-element__column">
+            <div class="case-intro__text">
+              <h5>Thousands of ancient greek findings visualised in a dynamic representation by combining the current system with modern age technologies.</h5>
               <p>
-                I was exploring some designs styles with the images of the project ripe from Evelyn Bencicova. I knew I wanted to use a high contrast element along with
-                the photography. Like a bright color or a typeface with a lot of character. Because if I wouldn't, the design would feel like a mourning card 🤷‍♀️.
+                ThorikΩs is a project created for the Information Design course of the Amsterdam University of Applied Sciences The ThorikΩs visualization was created in
+                collaboration with the UU. Thorikos was a city in the southern portion of ancient Attica. There have been found all sorts of objects from ancient Greece
+                in this area. These findings consist mostly of shards of objects like tiles, amphora's, jugs and cups.
               </p>
-            </div>
-            <div class="case-element__column">
               <p>
-                The Gothic typeface works great with the models. The main focus is therefore mainly on the photography. The rest of the UI is kept fairly minimal, by the
-                use of low contrast which is created through small typefaces and a two-color, color-palette.
+                The findings have been categorized and are visualized manually. Creating those visualizations takes a lot of work which is why this project is created.
+                With the ThorikΩs project, we can dynamically create map views of specific findings. Like Amphora found in 2013, poorly reserved grinding stones with a
+                black glaze or drinking vessels from the Archaic period.
+              </p>
+              <p>
+                The project was received with pleasure by teachers and more importantly the client. We received the highest possible grade, a 10, and the project was
+                chosen as most useful by the client. The tool is now being used by the ThorikΩs team to gain new insights.
               </p>
             </div>
           </div>
-          <a class="casestudy__cta" href="red.html"> View project <img src="assets/img/arrow-up.svg" alt="" /> </a>
-        </div>
+        </section>
 
-        <img src="assets/img/Thorikos/case/1.jpg" alt="" />
-      </article>
+        <section class="case-element">
+          <img src="assets/img/thorikos/case/feature.png" alt="" />
+        </section>
 
-      <article class="case-element">
-        <div class="case-element__text">
-          <small>May 05, 2020</small>
-          <h2>RIPE</h2>
-          <hr class="divider" />
-          <div class="case-element__body">
-            <div class="case-element__column">
-              <p>
-                I was exploring some designs styles with the images of the project ripe from Evelyn Bencicova. I knew I wanted to use a high contrast element along with
-                the photography. Like a bright color or a typeface with a lot of character. Because if I wouldn't, the design would feel like a mourning card 🤷‍♀️.
-              </p>
-            </div>
-            <div class="case-element__column">
-              <p>
-                The Gothic typeface works great with the models. The main focus is therefore mainly on the photography. The rest of the UI is kept fairly minimal, by the
-                use of low contrast which is created through small typefaces and a two-color, color-palette.
-              </p>
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>A feature</small>
+            <h2>Browse Through The Collection</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  You start with the entire collection. This is represented by the green rectangle. You can divide the collection into categories seen below. For example,
+                  when you click shape objects, you will see the main objects like tiles, amphora's, jugs and cups.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  These can then be discovered further. Once you click one of these objects you will reduce the objects to your selection. This process can be repeated
+                  over and over until there are no more findings.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <img src="assets/img/Thorikos/case/1.jpg" alt="" />
-      </article>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/thorikos/case/browse.mov" />
+          </video>
+        </article>
 
-      <article class="case-element case-element-fullish">
-        <div class="case-element__text">
-          <small>May 05, 2020</small>
-          <h2>RIPE</h2>
-          <hr class="divider" />
-          <div class="case-element__body">
-            <div class="case-element__column">
-              <p>
-                I was exploring some designs styles with the images of the project ripe from Evelyn Bencicova. I knew I wanted to use a high contrast element along with
-                the photography. Like a bright color or a typeface with a lot of character. Because if I wouldn't, the design would feel like a mourning card 🤷‍♀️.
-              </p>
-            </div>
-            <div class="case-element__column">
-              <p>
-                The Gothic typeface works great with the models. The main focus is therefore mainly on the photography. The rest of the UI is kept fairly minimal, by the
-                use of low contrast which is created through small typefaces and a two-color, color-palette.
-              </p>
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>A feature</small>
+            <h2>Focus On The Smaller Details</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  Some categories contain a lot of variables. The shape objects, for example, contain 144 different types of objects. By zooming in, you remove the 10
+                  biggest and fill the screen with the remaining variables.
+                </p>
+              </div>
             </div>
           </div>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/thorikos/case/zoom.mov" />
+          </video>
+        </article>
+
+        <article class="case-element case-element-fullish">
+          <div class="case-element__text">
+            <small>One plus one</small>
+            <h2>Equals Thorikos</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  This tool is an interactive version of two tools combined. The first is the original map with grid system of Thorikos. This was a analog system and
+                  needed to be digitalised. This new digital system is then combined with a interactive treemap. The treemap was “hacked” to become a filter system.
+                </p>
+              </div>
+
+              <div class="case-element__column">
+                <p>
+                  The Thorikos site has tons of variables of which we choose the 7 most important. Some of these had 100+ sub-categories. The interactive treemap can
+                  store all these variables and serve an unique map view for each selection.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-element__grid">
+            <div class="case-element__row">
+              <h3>Map of Thorikos</h3>
+              <div>
+                <img src="assets/img/thorikos/case/grid1.png" alt="" />
+              </div>
+            </div>
+            <div class="case-element__row">
+              <h3>Treemap</h3>
+              <div>
+                <img src="assets/img/thorikos/case/grid2.gif" alt="" />
+              </div>
+            </div>
+            <div class="case-element__row">
+              <h3>Thorikos</h3>
+              <div>
+                <img src="assets/img/thorikos/case/grid3.gif" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>A feature</small>
+            <h2>Explore The Map</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  Once you are happy with your selection, you can flip over to the map view. The map view show the map of Thorikos along with a grid of the areas that
+                  have been searched. The grid is divided into meso squares, these are areas of 25x25 meter.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  The meso squares are group by macro squares (50x50) and can be shown by toggling the grid. If you hover over the meso squares you see the number of
+                  findings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/thorikos/case/map.mov" />
+          </video>
+        </article>
+
+        <div class="case-element--full">
+          <div class="case-element--full__img">
+            <img src="assets/img/thorikos/case/bak1.jpg" alt="" />
+            <img src="assets/img/thorikos/case/bak2.jpg" alt="" />
+            <img src="assets/img/thorikos/case/bak3.gif" alt="" />
+          </div>
+          <p>
+            We crafted a puzzle which matched the digital product. You can follow along with this puzzle by taking filtering the data on the site. At the last step you
+            see 4 findings at the same location as the site in Thorikos. The puzzle is created by lasercutting and engraving.
+          </p>
         </div>
 
-        <div class="case-element__grid">
-          <div class="case-element__row">
-            <h3>Map of Thorikos</h3>
-            <div>
-              <img src="assets/img/thorikos/case/dum1.jpg" alt="" />
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>A feature</small>
+            <h2>Keep Track of your Progress</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  We've added breadcrumbs to keep track of where you currently are in the collection. These can be found in the upper-left area above the visualizations.
+                  Every time you browse the collection it's stored and shown here. The breadcrumbs are interactive in both the collection view and map view. Once you
+                  click them you navigate to that selection.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="case-element__row">
-            <h3>Treemap</h3>
-            <div>
-              <img src="assets/img/thorikos/case/dum2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="case-element__row">
-            <h3>Thorikos</h3>
-            <div>
-              <img src="assets/img/thorikos/case/dum3.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </article>
 
-      <div class="case-element--full">
-        <div class="case-element--full__img">
-          <img src="assets/img/thorikos/case/process.png" alt="" />
-        </div>
-        <p>
-          We crafted a puzzle which matched the digital product. You can follow along with this puzzle by taking filtering the data on the site. At the last step you see
-          4 findings at the same location as the site in Thorikos. The puzzle is created by lasercutting and engraving.
-        </p>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/thorikos/case/history.mov" />
+          </video>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/thorikos/case/history2.mov" />
+          </video>
+        </article>
+
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>A feature</small>
+            <h2>Share your Findings</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  If you want to share your findings you can click the button in the upper-right area and download the map view. You will then receive a .png image that
+                  contains the grid, map, legend, and breadcrumbs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/thorikos/case/share.mov" />
+          </video>
+        </article>
       </div>
-
-      <article class="case-element">
-        <div class="case-element__text">
-          <small>May 05, 2020</small>
-          <h2>RIPE</h2>
-          <hr class="divider" />
-          <div class="case-element__body">
-            <div class="case-element__column">
-              <p>
-                I was exploring some designs styles with the images of the project ripe from Evelyn Bencicova. I knew I wanted to use a high contrast element along with
-                the photography. Like a bright color or a typeface with a lot of character. Because if I wouldn't, the design would feel like a mourning card 🤷‍♀️.
-              </p>
-            </div>
-            <div class="case-element__column">
-              <p>
-                The Gothic typeface works great with the models. The main focus is therefore mainly on the photography. The rest of the UI is kept fairly minimal, by the
-                use of low contrast which is created through small typefaces and a two-color, color-palette.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <img src="assets/img/Thorikos/case/1.jpg" alt="" />
-      </article>
-
-      <article class="case-element">
-        <div class="case-element__text">
-          <small>May 05, 2020</small>
-          <h2>RIPE</h2>
-          <hr class="divider" />
-          <div class="case-element__body">
-            <div class="case-element__column">
-              <p>
-                I was exploring some designs styles with the images of the project ripe from Evelyn Bencicova. I knew I wanted to use a high contrast element along with
-                the photography. Like a bright color or a typeface with a lot of character. Because if I wouldn't, the design would feel like a mourning card 🤷‍♀️.
-              </p>
-            </div>
-            <div class="case-element__column">
-              <p>
-                The Gothic typeface works great with the models. The main focus is therefore mainly on the photography. The rest of the UI is kept fairly minimal, by the
-                use of low contrast which is created through small typefaces and a two-color, color-palette.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <img src="assets/img/Thorikos/case/1.jpg" alt="" />
-      </article>
     </main>
   </body>
 </html>

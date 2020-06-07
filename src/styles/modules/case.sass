@@ -1,3 +1,57 @@
+.case-element
+  max-width: 1158px
+  margin: 0 auto
+  margin-bottom: 20rem
+
+  img, video
+    max-width: 100%
+    margin-bottom: 2rem
+
+    &:last-child
+      margin-bottom: 0
+
+  small
+    margin: 0
+
+    text-transform: uppercase
+
+    color: #F9F9F9
+
+    font-family: SchnyderL-Light
+    font-size: 16px
+
+  h2
+    display: block
+
+    margin: 0
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+    text-transform: uppercase
+
+    color: #F9F9F9
+
+    font-family: SchnyderL-Light
+    font-size: 72px
+    line-height: 70px
+
+  .divider
+    width: 100%
+    height: 1px
+    margin-bottom: 2rem
+
+    background: rgba(#979797, .3)
+
+  .casestudy__cta
+    margin-top: 3.6rem
+
+  p
+    color: #F9F9F9
+
+    font-family: HelveticaNeue-Light
+    font-size: 18px
+    line-height: 28px
+
 .case-header
   position: relative
 
@@ -79,12 +133,15 @@
       //   margin-bottom: 0
 
 .case-intro__meta
+  min-width: 9.1rem
   margin-right: 27.7rem
 
 .case-element
   .case-intro__meta-group
 
     h4
+      display: block
+
       margin: 0
       margin-bottom: 1.4rem
 
@@ -103,15 +160,21 @@
       font-size: 16px
 
     a
-      display: block
+      display: inline-block
 
       margin: 0
+      padding-bottom: -5px
+
+      transition: .3
 
       color: #0D0D0D
       border-bottom: 1px solid rgba(#0d0d0d, .2)
 
       font-family: HelveticaNeue-Light
       font-size: 16px
+
+      &:hover
+        border-bottom: 1px solid rgba(#0d0d0d, .7)
 
 .case-intro__meta-group
   margin-bottom: 4.5rem
@@ -139,61 +202,11 @@
     color: #0D0D0D
 
     font-family: HelveticaNeue-Light
-    font-size: 18px
-    line-height: 31px
-
-    &:last-child
-      margin-bottom: 0
-
-.case-element
-  max-width: 1158px
-  margin: 0 auto
-  margin-bottom: 20rem
-
-  img, video
-    max-width: 100%
-    margin-bottom: 2rem
-
-    &:last-child
-      margin-bottom: 0
-
-  small
-    margin: 0
-
-    color: #F9F9F9
-
-    font-family: SchnyderL-Light
-    font-size: 16px
-
-  h2
-    display: block
-
-    margin: 0
-    margin-top: 2rem
-    margin-bottom: 2rem
-
-    color: #F9F9F9
-
-    font-family: SchnyderL-Light
-    font-size: 72px
-    line-height: 70px
-
-  .divider
-    width: 100%
-    height: 1px
-    margin-bottom: 2rem
-
-    background: rgba(#979797, .3)
-
-  .casestudy__cta
-    margin-top: 3.6rem
-
-  p
-    color: #F9F9F9
-
-    font-family: HelveticaNeue-Light
-    font-size: 18px
+    font-size: 15px
     line-height: 28px
+
+    &:last-child
+      margin-bottom: 0
 
 .case-element__text
   max-width: 1098px
@@ -202,6 +215,18 @@
 
 .case-element__body
   display: flex
+
+.case-element__body--centered
+  align-items: center
+
+  max-width: 1034px
+  margin: 0 auto
+
+  .case-element__column:first-child
+    margin-right: 10.4rem
+
+  p
+    max-width: 524px
 
 .case-element__column
 
@@ -234,14 +259,37 @@
     font-size: 21.91px
 
   div
+    display: flex
+    align-items: center
+
     width: 100%
+    height: 33rem
     padding: 3.9rem
 
     border: 1px solid rgba(#979797, .3)
 
+    justify-items: center
+
 .case-element--full
+  width: 100vw
   margin-bottom: 20px
   margin-bottom: 200px
+
+.case-element--full__img
+  display: flex
+  flex-direction: row
+
+  width: 100vw
+
+  img
+    width: 33%
+    height: 60rem
+    margin-right: 1rem
+
+    object-fit: cover
+
+    &:last-child
+      margin: 0
 
 .case-element--full__img + p
   margin: 0 auto
@@ -263,3 +311,22 @@ p a
 
   color: inherit
   border-bottom: 1px solid rgba(#fff, .4)
+
+.case-element--light
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+  max-width: 100vw
+  padding: 100px 30px
+
+  color: #0d0d0d
+  background: #F3F0EC
+
+  img
+    max-width: 1155px
+    margin: 0 auto
+
+  h2, p
+    color: #0d0d0d
