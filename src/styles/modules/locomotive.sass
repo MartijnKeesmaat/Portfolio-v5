@@ -1,0 +1,53 @@
+/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth
+  overflow: hidden
+
+html.has-scroll-dragging
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.has-scroll-smooth body
+  overflow: hidden
+
+.has-scroll-smooth [data-scroll-container]
+  min-height: 100vh
+
+.c-scrollbar
+  position: absolute
+  top: 0
+  right: 0
+
+  width: 11px
+  height: 100vh
+
+  transition: transform 0.3s, opacity 0.3s
+  transform-origin: center right
+
+  opacity: 0
+
+  &:hover
+    transform: scaleX(1.45)
+
+    &:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar
+      opacity: 1
+
+  &_thumb
+    position: absolute
+    top: 0
+    right: 0
+
+    width: 7px
+    margin: 2px
+
+    cursor: -webkit-grab
+    cursor: grab
+
+    opacity: 0.5
+    border-radius: 10px
+    background-color: black
+
+  .has-scroll-dragging_thumb &
+    cursor: -webkit-grabbing
+    cursor: grabbing

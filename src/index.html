@@ -19,12 +19,13 @@
       <div class="logo-container">
         <a href="index.html" class="logo"> MA <span class="cursive">KE </span> </a>
       </div>
+
       <nav>
-        <a href="#intro">intro</a>
-        <a href="#casestudeis">casestudies</a>
-        <a href="#about">about</a>
-        <a href="#sketches">6pm-12am</a>
-        <a href="#contact">contact</a>
+        <a data-scroll-to href="#intro">intro</a>
+        <a data-scroll-to href="#casestudies">casestudies</a>
+        <a data-scroll-to href="#about">about</a>
+        <a data-scroll-to href="#sketches">6pm-12am</a>
+        <a data-scroll-to href="#contact">contact</a>
       </nav>
       <div class="socials">
         <a href="">Dr</a>
@@ -35,116 +36,140 @@
     </header>
 
     <main data-barba="container" data-barba-namespace="home">
-      <section id="intro">
-        <h1>Student <span class="cursive">of</span> Design <span class="cursive">and</span> creative <span class="cursive">developer</span></h1>
-        <canvas id="self-portait"></canvas>
-        <small class="intro-caption">self-portait, 2020</small>
-      </section>
-
-      <section id="casestudies">
-        <h2 class="grid-inset">Casestudies <img src="assets/img/arrow-down.svg" alt="" /></h2>
-
-        <section class="casestudy">
-          <h3 class="casestudy__title">Codename</h3>
-          <ul class="casestudy__stack">
-            <li class="casestudy__stack__item">Creative Development</li>
-            <li class="casestudy__stack__item">Visual Design</li>
-          </ul>
-          <div class="casestudy__cta">
-            <a href="red.html"> View project <img src="assets/img/arrow-up.svg" alt="" /> </a>
-          </div>
-
-          <div class="casestudy__images">
-            <img class="casestudy__image casestudy__image--1" src="assets/img/codename/featured/1.jpg" alt="" />
-            <img class="casestudy__image casestudy__image--2" src="assets/img/codename/featured/2.jpg" alt="" />
-            <img class="casestudy__image casestudy__image--3" src="assets/img/codename/featured/3.jpg" alt="" />
-          </div>
+      <div data-scroll-container>
+        <section id="intro" data-scroll-section>
+          <h1>
+            <div data-scroll data-scroll-speed="1">Student <span class="cursive">of</span></div>
+            <div data-scroll data-scroll-speed="1.4">Design <span class="cursive">and</span></div>
+            <div data-scroll data-scroll-speed="1.8">creative</div>
+            <div data-scroll data-scroll-speed="2.2"><span class="cursive">developer</span></div>
+          </h1>
+          <canvas id="self-portait"></canvas>
+          <small class="intro-caption">self-portait, 2020</small>
         </section>
 
-        <section class="casestudy casestudy--alt">
-          <h3 class="casestudy__title">Thorikos</h3>
-          <ul class="casestudy__stack">
-            <li class="casestudy__stack__item">Front-end</li>
-            <li class="casestudy__stack__item">UX design</li>
-          </ul>
-          <div class="casestudy__cta">View project <img src="assets/img/arrow-up.svg" alt="" /></div>
+        <section id="casestudies" data-scroll-section>
+          <h2 class="grid-inset">Casestudies <img src="assets/img/arrow-down.svg" alt="" /></h2>
 
-          <div class="casestudy__images">
-            <img class="casestudy__image casestudy__image--1" src="assets/img/thorikos/featured/1.jpg" alt="" />
-            <img class="casestudy__image casestudy__image--2" src="assets/img/thorikos/featured/2.jpg" alt="" />
-            <img class="casestudy__image casestudy__image--3" src="assets/img/thorikos/featured/3.jpg" alt="" />
-          </div>
+          <section class="casestudy">
+            <h3 class="casestudy__title" data-scroll data-scroll-speed="1.2">Codename</h3>
+            <div data-scroll data-scroll-speed="1">
+              <ul class="casestudy__stack">
+                <li class="casestudy__stack__item">Creative Development</li>
+                <li class="casestudy__stack__item">Visual Design</li>
+              </ul>
+              <div class="casestudy__cta">
+                <a href="red.html"> View project <img src="assets/img/arrow-up.svg" alt="" /> </a>
+              </div>
+            </div>
+
+            <div class="casestudy__images">
+              <img data-scroll data-scroll-speed="0.2" class="casestudy__image casestudy__image--1" src="assets/img/codename/featured/1.jpg" alt="" />
+              <img data-scroll data-scroll-speed="2" class="casestudy__image casestudy__image--2" src="assets/img/codename/featured/2.jpg" alt="" />
+              <img data-scroll data-scroll-speed="5" class="casestudy__image casestudy__image--3" src="assets/img/codename/featured/3.jpg" alt="" />
+            </div>
+          </section>
+
+          <section class="casestudy casestudy--alt">
+            <h3 data-scroll data-scroll-speed="1.5" class="casestudy__title">Thorikos</h3>
+            <div data-scroll data-scroll-speed="1">
+              <ul class="casestudy__stack">
+                <li class="casestudy__stack__item">Front-end</li>
+                <li class="casestudy__stack__item">UX design</li>
+              </ul>
+              <div class="casestudy__cta">
+                <a href="red.html"> View project <img src="assets/img/arrow-up.svg" alt="" /> </a>
+              </div>
+            </div>
+
+            <div class="casestudy__images">
+              <img data-scroll data-scroll-speed="3" class="casestudy__image casestudy__image--1" src="assets/img/thorikos/featured/1.jpg" alt="" />
+              <img data-scroll data-scroll-speed="0.1" class="casestudy__image casestudy__image--2" src="assets/img/thorikos/featured/2.jpg" alt="" />
+              <img data-scroll data-scroll-speed="0.8" class="casestudy__image casestudy__image--3" src="assets/img/thorikos/featured/3.jpg" alt="" />
+            </div>
+          </section>
         </section>
-      </section>
 
-      <section id="about">
-        <h2 class="about__title">I am <span class="cursive">lucky</span></h2>
+        <section id="about" data-scroll-section>
+          <h2 data-scroll data-scroll-speed="2" class="about__title">I am <span class="cursive">lucky</span></h2>
 
-        <div class="about__section">
-          <p class="about__caption">People</p>
-          <p class="about__p">I'm lucky to have worked with great people. Like the people at Superhero Cheesecake and BIT.</p>
-        </div>
+          <div data-scroll data-scroll-speed="1" class="about__section">
+            <p class="about__caption">People</p>
+            <p class="about__p">I'm lucky to have worked with great people. Like the people at Superhero Cheesecake and BIT.</p>
+          </div>
 
-        <div class="about__section">
-          <p class="about__caption">Projects</p>
-          <p class="about__p">
-            Creating cool stuff for clients like Philips, Vodafone, Media Monks, GreenEgg, First Vision, Slimming World, The SeaFood Bar, and many more.
-          </p>
-        </div>
-
-        <div class="about__section">
-          <p class="about__caption">Squeaky chair</p>
-          <div>
+          <div data-scroll data-scroll-speed="2" class="about__section">
+            <p class="about__caption">Projects</p>
             <p class="about__p">
-              The thing I'm most proud of though is the work I put out each night. Sitting on that squeaky Ikea chair behind a foldable camping table.
+              Creating cool stuff for clients like Philips, Vodafone, Media Monks, GreenEgg, First Vision, Slimming World, The SeaFood Bar, and many more.
             </p>
-            <p class="about__p">Creating work without anyone asking, just to get better at the craft, explore new techniques, and having fun doing it.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="sketches">
-        <div class="sketches__wrapper">
-          <small>From 6pm to 12am</small>
-          <h2 class="sketches__title">Digital <span class="cursive">sketches</span></h2>
-          <p class="sketches__text">
-            Design is like going to a gym. The more reps you put in, the better you get. 6pm to 12pm is when I work on side-projects. After school, studying, work, on
-            days off. Unessasary projects, is what I also call them. There isn’t a need, but yet there is. Usually I share these projects on Dribbble.
-          </p>
-          <a href="https://dribbble.com/MartijnKeesmaat" class="cta sketches__cta">See on Dribbble <img src="assets/img/arrow-up.svg" alt="" /></a>
-        </div>
-
-        <div class="sketches__grid">
-          <div class="sketches__grid-column">
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
           </div>
 
-          <div class="sketches__grid-column">
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
+          <div data-scroll data-scroll-speed="3" class="about__section">
+            <p class="about__caption">Squeaky chair</p>
+            <div>
+              <p class="about__p">
+                The thing I'm most proud of though is the work I put out each night. Sitting on that squeaky Ikea chair behind a foldable camping table.
+              </p>
+              <p class="about__p">Creating work without anyone asking, just to get better at the craft, explore new techniques, and having fun doing it.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="sketches" data-scroll-section>
+          <div class="sketches__wrapper">
+            <small>From 6pm to 12am</small>
+            <h2 class="sketches__title">Digital <span class="cursive">sketches</span></h2>
+            <p class="sketches__text">
+              Design is like going to a gym. The more reps you put in, the better you get. 6pm to 12pm is when I work on side-projects. After school, studying, work, on
+              days off. Unessasary projects, is what I also call them. There isn’t a need, but yet there is. Usually I share these projects on Dribbble.
+            </p>
+            <a href="https://dribbble.com/MartijnKeesmaat" class="cta sketches__cta">See on Dribbble <img src="assets/img/arrow-up.svg" alt="" /></a>
           </div>
 
-          <div class="sketches__grid-column">
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
-            <img class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
+          <div class="sketches__grid">
+            <div class="sketches__grid-column">
+              <img data-scroll data-scroll-speed="1" class="sketches__grid-item" src="assets/img/sketches/1.jpg" alt="" />
+              <img data-scroll data-scroll-speed="2" class="sketches__grid-item" src="assets/img/sketches/2.jpg" alt="" />
+              <img data-scroll data-scroll-speed="3" class="sketches__grid-item" src="assets/img/sketches/3.jpg" alt="" />
+            </div>
+
+            <div class="sketches__grid-column">
+              <img data-scroll data-scroll-speed="3" class="sketches__grid-item" src="assets/img/sketches/4.jpg" alt="" />
+              <img data-scroll data-scroll-speed="2" class="sketches__grid-item" src="assets/img/sketches/5.jpg" alt="" />
+              <img data-scroll data-scroll-speed="4" class="sketches__grid-item" src="assets/img/sketches/6.jpg" alt="" />
+            </div>
+
+            <div class="sketches__grid-column">
+              <img data-scroll data-scroll-speed="2" class="sketches__grid-item" src="assets/img/sketches/7.jpg" alt="" />
+              <img data-scroll data-scroll-speed="5" class="sketches__grid-item" src="assets/img/sketches/8.jpg" alt="" />
+              <img data-scroll data-scroll-speed="3" class="sketches__grid-item" src="assets/img/sketches/9.jpg" alt="" />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <footer id="contact">
-        <p>Find me on</p>
-        <a href="">Dribbble</a>
-        <a href="">LinkedIn</a>
-        <a href="">Behance</a>
-        <a href="">Instagram</a>
-        <a href=""><span class="cursive">or</span> mail me</a>
+        <footer id="contact" data-scroll-section>
+          <p>Find me on</p>
+          <a href="">Dribbble</a>
+          <a href="">LinkedIn</a>
+          <a href="">Behance</a>
+          <a href="">Instagram</a>
+          <a href=""><span class="cursive">or</span> mail me</a>
 
-        <small>make more</small>
-      </footer>
+          <small>make more</small>
+        </footer>
+      </div>
     </main>
   </body>
 </html>
+
+<!-- <div data-scroll-container>
+  <div data-scroll-section>
+    <h1 data-scroll>Hey</h1>
+    <p data-scroll>👋</p>
+  </div>
+  <div data-scroll-section>
+    <h2 >What's up?</h2>
+    <p data-scroll data-scroll-speed="2">😬</p>
+  </div>
+</div> -->
