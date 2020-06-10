@@ -23,12 +23,12 @@ class Particle {
     }
     this.x += (1 - this.speed) * 3 + this.v;
 
-    if (mouseIsPressed) {
-      // this.x = -10;
-    } else {
-      if (this.x > width) {
-        this.x = 0;
-      }
+    // if (mouseIsPressed) {
+    //   // this.x = -10;
+    // } else {
+    // }
+    if (this.x > width) {
+      this.x = 0;
     }
   }
 
@@ -128,7 +128,7 @@ function goToStep4() {
 }
 
 function step4() {
-  clear();
+  if (!mouseIsPressed) clear();
   particles.forEach((p) => {
     p.update();
     p.draw();
@@ -168,7 +168,7 @@ function goToStep5() {
 }
 
 function step5() {
-  clear();
+  if (!mouseIsPressed) clear();
   particles.forEach((p) => {
     p.update();
     ctx.globalAlpha = p.speed * 0.3;

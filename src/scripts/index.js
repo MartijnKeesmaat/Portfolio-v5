@@ -81,34 +81,27 @@ barba.init({
         scroll.update();
 
         if ((next.namespace = 'home')) {
-          smoothScroller();
+          homeFunctions();
         }
 
-        if ((next.namespace = 'about')) {
-          const vids = next.container.querySelectorAll('video');
-          vids.forEach((vid) => vid.play());
-
-          const eye = document.querySelector('.case-header__eye');
-          eye.addEventListener('mouseenter', function (e) {
-            gsap.to('.eye-vis', {
-              autoAlpha: 0,
-              duration: 0.7,
-            });
-          });
-
-          eye.addEventListener('mouseleave', function (e) {
-            gsap.to('.eye-vis', {
-              autoAlpha: 1,
-              duration: 0.7,
-            });
-          });
+        if ((next.namespace = 'codename') || (next.namespace = 'red') || (next.namespace = 'thorikos')) {
+          detailFunctions();
         }
       },
 
       async once({ current, next, trigger }) {
-        console.log(next.namespace);
+        // console.log(next.namespace);
         contentAnimation();
         smooth(next.container);
+
+        if ((next.namespace = 'home')) {
+          homeFunctions();
+        }
+
+        if ((next.namespace = 'codename') || (next.namespace = 'red') || (next.namespace = 'thorikos')) {
+          console.log(next);
+          detailFunctions();
+        }
       },
     },
   ],
@@ -118,6 +111,30 @@ function smooth(container) {
   scroll = new LocomotiveScroll({
     el: container.querySelector('[data-scroll-container]'),
     smooth: true,
+  });
+}
+
+function homeFunctions() {
+  smoothScroller();
+}
+
+function detailFunctions() {
+  const vids = document.querySelectorAll('main video');
+  vids.forEach((vid) => vid.play());
+
+  const eye = document.querySelector('.case-header__eye');
+  eye.addEventListener('mouseenter', function (e) {
+    gsap.to('.eye-vis', {
+      autoAlpha: 0,
+      duration: 0.7,
+    });
+  });
+
+  eye.addEventListener('mouseleave', function (e) {
+    gsap.to('.eye-vis', {
+      autoAlpha: 1,
+      duration: 0.7,
+    });
   });
 }
 
