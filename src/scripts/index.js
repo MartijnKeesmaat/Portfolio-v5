@@ -5,30 +5,28 @@ import '../styles/index.sass';
 import LocomotiveScroll from 'locomotive-scroll';
 
 let scroll;
+let menuIsShown = true;
 
 function pageTransition() {
   var tl = gsap.timeline();
-  tl.to('ul.transition li', {
-    duration: 0.5,
-    scaleX: 1,
-    transformOrigin: 'top left',
-    stagger: 0.2,
+  tl.to('.transition', {
+    duration: 0.6,
+    y: '-60',
+    delay: 1,
   });
-  tl.to('ul.transition li', {
+  tl.to('.transition', {
     duration: 0.5,
-    scaleX: 0,
-    transformOrigin: 'top left',
-    stagger: 0.1,
-    delay: 0.1,
+    y: '100%',
+    delay: 0.5,
   });
 }
 
 function contentAnimation() {
   gsap.from('main', {
-    duration: 0.2,
-    y: 30,
+    duration: 0.4,
+    y: 50,
     autoAlpha: 0,
-    delay: 0.5,
+    delay: 0.8,
   });
 }
 
@@ -80,12 +78,12 @@ barba.init({
         contentAnimation();
         scroll.update();
 
-        if ((next.namespace = 'home')) {
+        if (next.namespace === 'home') {
           homeFunctions();
-        }
-
-        if ((next.namespace = 'codename') || (next.namespace = 'red') || (next.namespace = 'thorikos')) {
+          detailToHome();
+        } else {
           detailFunctions();
+          homeToDetail();
         }
       },
 
@@ -94,14 +92,20 @@ barba.init({
         contentAnimation();
         smooth(next.container);
 
-        if ((next.namespace = 'home')) {
+        console.log(next.namespace);
+        if (next.namespace === 'home') {
           homeFunctions();
-        }
-
-        if ((next.namespace = 'codename') || (next.namespace = 'red') || (next.namespace = 'thorikos')) {
-          console.log(next);
+        } else {
           detailFunctions();
         }
+        // console.log(current, next);
+        // console.log(next.namespace);
+
+        // if ((next.namespace = 'codename') || (next.namespace = 'red') || (next.namespace = 'thorikos')) {
+        //   console.log(next.namespace);
+        //   // console.log('brro');
+        //   detailFunctions();
+        // }
       },
     },
   ],
@@ -116,6 +120,44 @@ function smooth(container) {
 
 function homeFunctions() {
   smoothScroller();
+}
+
+function detailToHome() {
+  const tl = gsap.timeline();
+  menuIsShown = true;
+
+  tl.to('.button-back', {
+    scale: 0,
+    autoAlpha: 0,
+    duration: 0.4,
+    delay: 0.3,
+  });
+
+  tl.to('nav button', {
+    x: 0,
+    delay: 1,
+    duration: 0.4,
+    stagger: 0.04,
+  });
+}
+
+function homeToDetail() {
+  const tl = gsap.timeline();
+  menuIsShown = false;
+
+  tl.to('nav button', {
+    x: 100,
+    duration: 0.4,
+    stagger: 0.04,
+    delay: 1,
+  });
+
+  tl.to('.button-back', {
+    scale: 1,
+    autoAlpha: 1,
+    duration: 0.4,
+    delay: 0.3,
+  });
 }
 
 function detailFunctions() {

@@ -21,7 +21,7 @@
 
   color: #FFFFFF
 
-  font-family: SchnyderL-Light
+  font-family: 'Schnyder L'
   font-size: 18px
 
 nav
@@ -32,34 +32,34 @@ nav
 
   padding: 0rem 5.6rem
 
-  button
-    margin-right: 5.2rem
+.button-tainer, .button-tainer button
+  margin-right: 5.2rem
 
-    transition: .3s
-    transition: .3s
-    text-align: center
-    letter-spacing: 0.4px
-    text-transform: uppercase
+  transition: .3s
+  transition: .3s
+  text-align: center
+  letter-spacing: 0.4px
+  text-transform: uppercase
 
-    opacity: 0.5
-    color: #FFFFFF
-    border: none
-    background: none
+  opacity: 0.5
+  color: #FFFFFF
+  border: none
+  background: none
 
-    font-family: HelveticaNeue-Medium
-    font-size: 13px
+  font-family: 'Helvetica Neue'
+  font-size: 13px
 
-    &:first-child
-      opacity: 1
+  &:first-child
+    opacity: 1
 
-    &:hover
-      opacity: 1 !important
+  &:hover
+    opacity: 1 !important
 
-    &:last-child
-      margin-right: 0
+  &:last-child
+    margin-right: 0
 
-    &:focus
-      outline: none
+  &:focus
+    outline: none
 
 .socials
   display: flex
@@ -77,8 +77,40 @@ nav
 
     color: #FFFFFF
 
-    font-family: HelveticaNeue
+    font-family: 'Helvetica Neue'
     font-size: 15px
 
     &:last-child
       margin-right: 0
+
+.button-tainer
+  overflow: hidden
+
+  height: 18px
+
+.button-back
+  position: fixed
+  top: 25px
+  right: 0
+  left: 0
+
+  display: flex
+  visibility: hidden
+  align-items: center
+  justify-content: center
+
+  width: 50px
+  height: 50px
+  margin: 0 auto
+
+  transition: .3s
+  transform: scale(0)
+
+  opacity: 0
+  color: #fff
+  border: 1px solid rgba(#fff, 0.4)
+  border-radius: 50%
+  background: #0d0d0d
+
+  &:hover
+    transform: scale(1.2) !important
