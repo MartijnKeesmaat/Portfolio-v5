@@ -90,28 +90,23 @@ barba.init({
       },
 
       async once({ current, next, trigger }) {
-        // console.log(next.namespace);
         contentAnimation();
         smooth(next.container);
 
-        console.log(next.namespace);
         if (next.namespace === 'home') {
           homeFunctions();
         } else {
           detailFunctions();
+
+          gsap.set('nav button', {
+            x: 100,
+          });
+
+          gsap.set('.button-back', {
+            scale: 1,
+            autoAlpha: 1,
+          });
         }
-
-        scroll.on('scroll', (instance) => {
-          document.documentElement.setAttribute('data-direction', instance.direction);
-        });
-        // console.log(current, next);
-        // console.log(next.namespace);
-
-        // if ((next.namespace = 'codename') || (next.namespace = 'red') || (next.namespace = 'thorikos')) {
-        //   console.log(next.namespace);
-        //   // console.log('brro');
-        //   detailFunctions();
-        // }
       },
     },
   ],
@@ -145,6 +140,7 @@ function detailToHome() {
     autoAlpha: 0,
     duration: 0.4,
     delay: 0.3,
+    ease: 'power2.out',
   });
 
   tl.to('nav button', {
@@ -152,18 +148,19 @@ function detailToHome() {
     delay: 1,
     duration: 0.4,
     stagger: 0.04,
+    ease: 'power2.out',
   });
 }
 
 function homeToDetail() {
   const tl = gsap.timeline();
-  menuIsShown = false;
 
   tl.to('nav button', {
     x: 100,
     duration: 0.4,
     stagger: 0.04,
     delay: 1,
+    ease: 'power2.out',
   });
 
   tl.to('.button-back', {
@@ -171,6 +168,7 @@ function homeToDetail() {
     autoAlpha: 1,
     duration: 0.4,
     delay: 0.3,
+    ease: 'power2.out',
   });
 }
 
@@ -181,7 +179,6 @@ function detailFunctions() {
   scroll.on('scroll', (instance) => {
     // console.log(window.innerHeight, document.documentElement.scrollTop, document.body.offsetHeight);
     if (footer.getBoundingClientRect().y < 70) {
-      console.log('a');
       window.location = ref;
     }
   });
