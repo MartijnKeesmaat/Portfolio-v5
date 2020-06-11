@@ -120,6 +120,13 @@ function smooth(container) {
 }
 
 function homeFunctions() {
+  const socialLinks = document.querySelectorAll('#contact a');
+  socialLinks.forEach((e) => {
+    e.addEventListener('mouseenter', function (e) {
+      socialLinks.forEach((link) => (link.style.opacity = 0.4));
+    });
+  });
+
   smoothScroller();
 }
 
