@@ -12,8 +12,9 @@
     font-size: 16px
 
   .cta
-    padding: 1em 2em
+    padding: 0.8em 2em
 
+    transition: .3s
     text-align: center
     letter-spacing: 0.04px
 
@@ -23,8 +24,16 @@
     font-family: 'Helvetica Neue'
     font-size: 16px
 
+    &:hover
+      border: 1px solid rgba(#979797, 1)
+
+      img
+        transform: translate(5px, -6px)
+
     img
-      margin-left: 8px
+      margin-left: 4px
+
+      transition: .3s
 
 .sketches__title
   margin-bottom: 3.6rem
@@ -49,7 +58,7 @@
 .sketches__text
   display: inline-block
 
-  max-width: 65.3rem
+  max-width: 60.8rem
   margin: 0 auto
   margin-bottom: 5.8rem
 

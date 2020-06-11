@@ -32,28 +32,29 @@ nav
 
   padding: 0rem 5.6rem
 
+.button-tainer button
+  opacity: 0.5
+
+  &:hover
+    opacity: 1 !important
+
+.button-tainer:first-child button
+  opacity: 1
+
 .button-tainer, .button-tainer button
   margin-right: 5.2rem
 
-  transition: .3s
   transition: .3s
   text-align: center
   letter-spacing: 0.4px
   text-transform: uppercase
 
-  opacity: 0.5
   color: #FFFFFF
   border: none
   background: none
 
   font-family: 'Helvetica Neue'
   font-size: 13px
-
-  &:first-child
-    opacity: 1
-
-  &:hover
-    opacity: 1 !important
 
   &:last-child
     margin-right: 0
