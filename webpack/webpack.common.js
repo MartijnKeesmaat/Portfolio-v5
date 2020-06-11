@@ -39,6 +39,11 @@ module.exports = {
       filename: 'codename.html',
       template: './src/codename.html',
     }),
+
+    new HtmlWebpackPlugin({
+      filename: 'habitus.html',
+      template: './src/habitus.html',
+    }),
   ],
   resolve: {
     alias: {

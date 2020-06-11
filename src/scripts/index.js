@@ -14,8 +14,9 @@ function pageTransition() {
     y: '-60',
     delay: 1,
   });
+
   tl.to('.transition', {
-    duration: 0.5,
+    duration: 1,
     y: '100%',
     delay: 0.5,
   });

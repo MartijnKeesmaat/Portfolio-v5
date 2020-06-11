@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Codename</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A codename project" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Martijn Keesmaat" />
+  </head>
+
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <header class="main-header">
+      <a href="index.html" class="button-back">X</a>
+      <div class="logo-container">
+        <a href="index.html" class="logo"> MA <span class="cursive">KE </span> </a>
+      </div>
+      <nav>
+        <div class="button-tainer">
+          <button id="l-1">intro</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-2">casestudies</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-3">about</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-4">6pm-12am</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-5">contact</button>
+        </div>
+      </nav>
+
+      <div class="socials">
+        <a href="">Dr</a>
+        <a href="">Li</a>
+        <a href="">Be</a>
+        <a href="">Ig</a>
+      </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="habitus">
+      <div data-scroll-container>
+        <header class="case-header">
+          <p class="eye-vis">Habitus</p>
+          <h1 class="eye-vis">Gesture <span class="cursive">Drawing</span></h1>
+          <img src="assets/img/eye.svg" alt="" class="case-header__eye" />
+          <div class="header__overlay eye-vis"></div>
+          <video autoplay="autoplay" loop muted id="header__video">
+            <source src="assets/img/habitus/feature1.mov" />
+          </video>
+        </header>
+
+        <section class="case-intro" style="margin-bottom: 0;">
+          <div class="case-element">
+            <div class="case-intro__meta">
+              <div class="case-intro__meta-group">
+                <h4>Role</h4>
+                <p>Front-end</p>
+                <p>UX-Design</p>
+              </div>
+
+              <div class="case-intro__meta-group">
+                <h4>Link</h4>
+                <a target="_blank" href="https://poser.netlify.app/">Live demo</a>
+              </div>
+            </div>
+            <div class="case-intro__text">
+              <h5>Habitus is a tool to practice gesture drawing.</h5>
+              <p>
+                With the tool, you can draw the pose of the mannequin. You can select your own poses, draw with a timer on and break down complex poses. A gesture drawing
+                is a laying in of the action, form, and pose of a model/figure. Typical situations involve an artist drawing a series of poses taken by a model in a short
+                amount of time.
+              </p>
+              <p>
+                The animations are created by manipulating a SVG with Javascript. GSAP is used for these animations as well as for the User Interface.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <img class="case-element--span-full" src="assets/img/habitus/sketch1.jpg" />
+
+        <div class="case-element custom" style="background: #fff;">
+          <img src="assets/img/habitus/breakdown.jpg" alt="" />
+        </div>
+
+        <img style="margin-bottom: 200px;" class="case-element--span-full" src="assets/img/habitus/sketch2.jpg" />
+
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>Feature 1</small>
+            <h2>Strike a pose for the camera</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  Practice a specific pose, there is no need to hurry your sketch.
+                </p>
+              </div>
+              <!-- <div class="case-element__column">
+                <p>
+                  The meso squares are group by macro squares (50x50) and can be shown by toggling the grid. If you hover over the meso squares you see the number of
+                  findings.
+                </p>
+              </div> -->
+            </div>
+          </div>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/habitus/feature1.mov" />
+          </video>
+        </article>
+
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>Feature 2</small>
+            <h2>Capture the pose within the time</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  A great way to practice gestures. Need more time? Adjust it below.
+                </p>
+              </div>
+              <!-- <div class="case-element__column">
+                        <p>
+                          The meso squares are group by macro squares (50x50) and can be shown by toggling the grid. If you hover over the meso squares you see the number of
+                          findings.
+                        </p>
+                      </div> -->
+            </div>
+          </div>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/habitus/feature2.mov" />
+          </video>
+        </article>
+
+        <article class="case-element">
+          <div class="case-element__text">
+            <small>Feature 3</small>
+            <h2>Strike a pose for the camera</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  Practice a specific pose, there is no need to hurry your sketch.
+                </p>
+              </div>
+              <!-- <div class="case-element__column">
+                        <p>
+                          The meso squares are group by macro squares (50x50) and can be shown by toggling the grid. If you hover over the meso squares you see the number of
+                          findings.
+                        </p>
+                      </div> -->
+            </div>
+          </div>
+
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/habitus/feature3.mov" />
+          </video>
+        </article>
+
+        <img class="case-element--span-full" src="assets/img/habitus/sketch1.jpg" />
+
+        <div class="case-element custom" style="background: #fff;">
+          <div class="wrapper">
+            <small>Coded animations</small>
+            <h2>Workflow</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  The character is created in Illustrator and was based on a well-known model. The character was then split-up per body part and labeled accordingly.
+                  Below you see what that looks like in Illustrator layers.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  We can animate each body part separately because of this process. Through GSAP we can transform, scale, move and rotate the character to create smooth
+                  animations.
+                </p>
+              </div>
+            </div>
+
+            <img src="assets/img/habitus/workflow.jpg" alt="" />
+          </div>
+        </div>
+
+        <img class="case-element--span-full" src="assets/img/habitus/sketch3.jpg" />
+
+        <div class="case-element custom" style="margin-bottom: 0;">
+          <div class="wrapper">
+            <small>Visuals</small>
+            <h2>Icons</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  There was a selection of icons curated for each feature. These also had to work together. When I got to the handpicked keyword, under “select”, I
+                  thought of the concept to use hands.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  Because if you would adjust the mannequin normally, you would do it with your hands as well.
+                </p>
+              </div>
+            </div>
+
+            <img src="assets/img/habitus/icons.jpg" alt="" />
+          </div>
+        </div>
+
+        <img class="case-element--span-full" src="assets/img/habitus/hands.jpg" />
+
+        <div class="case-element custom" style="margin-bottom: 0;">
+          <div class="wrapper">
+            <small>Breakdown</small>
+            <h2>Abstacting the human physique</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  Each version of the hand didn’t feel right. They felt out of place and too stylized. Which made them distract from the more important feature. As I
+                  brainstormed more, I thought of abstracting the icons further. They needed to become simpler.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  I drew inspiration from this drawing practice in which you break down the character you are drawing into simple shapes. Each feature was then reimagined
+                  into simple shapes, which receive meaning through motion
+                </p>
+              </div>
+            </div>
+
+            <img src="assets/img/habitus/icon-breakdown.jpg" alt="" />
+          </div>
+        </div>
+
+        <div style="background: #fff;">
+          <img style="display: block; margin: 0 auto;" class="case-element--span-full" src="assets/img/habitus/icons.gif" />
+        </div>
+
+        <div class="case-element custom" style="margin-bottom: 0;">
+          <div class="wrapper">
+            <small>Breakdown</small>
+            <h2>But do they work?</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  After testing the UI along with these icons, I came to the conclusion that the abstract icons were to abstract. They didn’t add something and therefore
+                  took away clarity.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  The icons were replaced with new icons. I went back to the hand icons. As we would interact with the doll with our hands, we can use the hand icons here
+                  to interact.
+                </p>
+              </div>
+            </div>
+
+            <video autoplay="autoplay" loop muted>
+              <source src="assets/img/habitus/icons.mov" />
+            </video>
+
+            <img src="assets/img/habitus/yetanother.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
