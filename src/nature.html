@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hey RESN, let's work together!</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A codename project" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Martijn Keesmaat" />
+  </head>
+
+  <body data-barba="wrapper">
+    <div class="transition"></div>
+
+    <header class="main-header">
+      <a href="index.html" class="button-back">X</a>
+      <div class="logo-container">
+        <a href="index.html" class="logo"> MA <span class="cursive">KE </span> </a>
+      </div>
+      <nav>
+        <div class="button-tainer">
+          <button id="l-1">intro</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-2">casestudies</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-3">about</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-4">6pm-12am</button>
+        </div>
+        <div class="button-tainer">
+          <button id="l-5">contact</button>
+        </div>
+      </nav>
+
+      <div class="socials">
+        <a href="https://dribbble.com/MartijnKeesmaat">Dr</a>
+        <a href="https://www.linkedin.com/in/martijn-keesmaat-663a45b4/">Li</a>
+        <a href="https://www.behance.net/martijnkeesmaat">Be</a>
+        <a href="https://www.instagram.com/martijn_keesmaat/">Ig</a>
+      </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="nature">
+      <div data-scroll-container>
+        <header class="case-header">
+          <p class="eye-vis">Nature + Code =</p>
+          <h1 class="eye-vis">Nature<span class="cursive">of code</span></h1>
+          <img src="assets/img/eye.svg" alt="" class="case-header__eye" />
+          <div class="header__overlay eye-vis"></div>
+          <video autoplay="autoplay" loop muted id="header__video">
+            <source src="assets/img/puntjes/reel.mp4" type="video/mp4" />
+          </video>
+        </header>
+
+        <section class="case-intro">
+          <div class="case-element">
+            <div class="case-intro__meta">
+              <div class="case-intro__meta-group">
+                <h4>Role</h4>
+                <p>Front-end</p>
+              </div>
+
+              <div class="case-intro__meta-group">
+                <h4>Elsewhere</h4>
+                <a target="_blank" href="https://www.behance.net/gallery/96301601/Codename-series-2">Live demo</a>
+              </div>
+            </div>
+            <div class="case-intro__text">
+              <h5>Learn from Daniel Shiffman until I can make that one interaction.</h5>
+              <p>
+                During the Minor Visual (Interface) Design we were asked to pick a piece of artwork (poster, album cover etc.) and translate that to the web. First try to
+                re-create it with web technology (html elements, svg) then add interactivity and animation and maybe you can even enhance the artwork with elements in the
+                same graphical style as the original work. You can use CSS and SVG to create these animations.
+              </p>
+              <p>
+                That sounded like a fun exercise but I needed a challenge. I found the book of a cover which is simply a grid of dots and said to myself "what is the
+                coolest thing I can make?". This question let me down a rabbit-hole that is creative coding, physics, and animation.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-element">
+          <div class="case-element__text">
+            <small>Worth it though</small>
+            <h2>Taking a risk</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  Repulsion. It is a term I found after looking online which could be the answer to how to create the effect I initially had in mind. This term led me to
+                  the book Nature of Code which explains how this term works.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  When I found this book I decided to take a risk and read the book from start until I learned how to make this effect I had in mind. The deadline was
+                  within 3 weeks and I spent 2 weeks reading and experimenting until I could make the effect.
+                </p>
+              </div>
+            </div>
+            <a class="casestudy__cta" href="https://dribbble.com/shots/11199564-RIPE" target="_blank"> View project <img src="assets/img/arrow-up.svg" alt="" /> </a>
+          </div>
+          <img src="assets/img/puntjes/feature.jpg" alt="" />
+          <img src="assets/img/puntjes/feature2.jpg" alt="" />
+        </section>
+
+        <section class="case-element">
+          <div class="case-element__text">
+            <small>Introduction</small>
+            <h2>Random Walker</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  In the introduction we learn about various ways of generating random numbers. Randomness plays a large role in creative coding, giving each render a
+                  unique outcome.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  A random walker is an entity that follows a path based on a randomly generated input. This one simply draws a single point moves 5 steps and draws
+                  another.
+                </p>
+              </div>
+            </div>
+          </div>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/puntjes/walker.mov" />
+          </video>
+        </section>
+
+        <section class="case-element">
+          <div class="case-element__text">
+            <small>Chapter 1</small>
+            <h2>Vectors</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  The second chapter teaches us about vectors. Vectors are a basic building block in creative coding. Some people explain it very complex. I just see it
+                  as something that groups values. Instead of having multiple variables for position, you can group those into one vector. - position(x, y)
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  The experiment you see here is fairly simple. It calculates the distance of a particle between it and the position of the cursor. Then subtract that a
+                  bit for each frame. Repeat that for 50 particles and you get something like this.
+                </p>
+              </div>
+            </div>
+          </div>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/puntjes/2.mov" />
+          </video>
+        </section>
+
+        <section class="case-element">
+          <div class="case-element__text">
+            <small>Chapter 2</small>
+            <h2>Forces</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  In the past chapters we moved objects by updating the position with velocity and acceleration. However, the limiting factor was that these values were
+                  arbitrary. With forces we give some reason for those values. Like you see here with gravitational forces.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  This one is more complex than the previous one as we use two clasess which need to communicate with each other. The attractor class and the particle
+                  class. The particle is passed as an argument to the attractor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/puntjes/3.mov" />
+          </video>
+        </section>
+
+        <section class="case-element">
+          <div class="case-element__text">
+            <small>Chapter 4</small>
+            <h2>Particle system</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  A particle system it a system of many objects. Each object sharing similar attributes. In this chapter we learn how to maintain those systems. Here we
+                  introduce a lifecycle for each particle to keep things running smoothly.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  The experiment that is shown here isn't that fancy. It's main purpose is to demonstrate an infinite source of generated particles which still runs
+                  smoothly. This is because of the introduction of the lifecycle.
+                </p>
+              </div>
+            </div>
+          </div>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/puntjes/4.mov" />
+          </video>
+        </section>
+
+        <section class="case-element">
+          <div class="case-element__text">
+            <small>Chapter 6</small>
+            <h2>Autonomous Agents</h2>
+            <hr class="divider" />
+            <div class="case-element__body">
+              <div class="case-element__column">
+                <p>
+                  This is the chapter where I learned all the things to make the sketch I wanted. During the chapter you learn about various behaviors. This example has
+                  seek, flee and arrive behaviors.
+                </p>
+              </div>
+              <div class="case-element__column">
+                <p>
+                  This type of effect has calle my name for years and I never really knew how to make it. So with this project I took a big risk and spend 2 out of 3
+                  weeks researching.
+                </p>
+              </div>
+            </div>
+          </div>
+          <video autoplay="autoplay" loop muted>
+            <source src="assets/img/puntjes/5.mov" />
+          </video>
+        </section>
+
+        <footer class="case-footer" data-ref="codename.html">
+          <p class="eye-vis">Next project</p>
+          <h1 class="eye-vis">Codename <span class="cursive">the series</span></h1>
+          <div class="case-footer__overlay"></div>
+          <video autoplay="autoplay" loop muted class="case-footer__video">
+            <source src="assets/img/codename/case/codename-reel.mp4" type="video/mp4" />
+          </video>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

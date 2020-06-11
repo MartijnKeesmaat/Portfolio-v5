@@ -32,8 +32,8 @@ module.exports = {
       template: './src/thorikos.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'nature-of-code.html',
-      template: './src/nature-of-code.html',
+      filename: 'nature.html',
+      template: './src/nature.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'codename.html',
@@ -43,6 +43,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'habitus.html',
       template: './src/habitus.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'nature.html',
+      template: './src/nature.html',
     }),
   ],
   resolve: {

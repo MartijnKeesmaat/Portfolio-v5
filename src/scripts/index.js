@@ -18,6 +18,7 @@ function pageTransition() {
   tl.to('.transition', {
     duration: 1,
     y: '100%',
+    skew: 0,
     delay: 0.5,
   });
 }
@@ -99,6 +100,10 @@ barba.init({
         } else {
           detailFunctions();
         }
+
+        scroll.on('scroll', (instance) => {
+          document.documentElement.setAttribute('data-direction', instance.direction);
+        });
         // console.log(current, next);
         // console.log(next.namespace);
 
@@ -116,6 +121,7 @@ function smooth(container) {
   scroll = new LocomotiveScroll({
     el: container.querySelector('[data-scroll-container]'),
     smooth: true,
+    getDirection: true,
   });
 }
 
@@ -169,6 +175,22 @@ function homeToDetail() {
 }
 
 function detailFunctions() {
+  const ref = document.querySelector('.case-footer').dataset.ref;
+  const footer = document.querySelector('.case-footer');
+
+  scroll.on('scroll', (instance) => {
+    // console.log(window.innerHeight, document.documentElement.scrollTop, document.body.offsetHeight);
+    if (footer.getBoundingClientRect().y < 70) {
+      console.log('a');
+      window.location = ref;
+    }
+  });
+
+  // document.querySelector('[data-scroll-container]').addEventListener('scroll', function (ev) {
+  //   alert('a');
+
+  // });
+
   const vids = document.querySelectorAll('main video');
   vids.forEach((vid) => vid.play());
 

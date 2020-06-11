@@ -1,3 +1,6 @@
+html[data-direction="down"] .main-header
+  transform: translate3d(0,-100%,0)
+
 .main-header
   position: fixed
   z-index: 10
@@ -7,6 +10,8 @@
   display: flex
 
   width: 100vw
+
+  transition: .6s
 
   border-bottom: 1px solid rgba(#979797, .3)
   background: #0d0d0d

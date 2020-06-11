@@ -168,7 +168,7 @@ function goToStep5() {
 }
 
 function step5() {
-  if (!mouseIsPressed) clear();
+  clear();
   particles.forEach((p) => {
     p.update();
     ctx.globalAlpha = p.speed * 0.3;
